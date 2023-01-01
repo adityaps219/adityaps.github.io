@@ -1,2 +1,1 @@
 # adityaps.github.io
-baseurl: ""
