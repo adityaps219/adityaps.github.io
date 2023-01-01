@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #1A202C;
+
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background-image: radial-gradient(#dadada 1px, #fff 1px);
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+}
+/* common-css */
+.text-right{
+    text-align: right;
+}
+.m-0{
+    margin: 0 !important;
+}
+.p-0{
+    padding: 0 !important;
+}
+.common-padd{
+    padding: 80px 0px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Manrope', sans-serif;
+    color: #1A202C;
+}
+
+h1{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 71px;
+}
+h2{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 63px;
+}
+h3{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+}
+h4{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+}
+h5{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+}
+p{
+    margin: 0;
+}
+header{
+    background-color: #ffff;
+    padding: 20px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.sticky-top{
+    z-index: 99;
+}
+.main-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+   
+}
+nav ul li a{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 34px;
+    color: #576574;
+    padding: 5px 10px;
+    margin: 0px 20px;   
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+
+}
+nav ul li a:hover{
+    color: #576574;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-bottom: 3px solid #576574;
+    transform: scale(1.04);
+    transition: 0.3s ease-in;
+}
+.home-banner{
+    padding: 160px 0px 80px 0px;
+}
+/* banner-section */
+.banner-content{
+    width: 1020px;
+    max-width: 100%;
+    
+}
+.banner-content h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 71px;
+    margin-bottom: 36px;
+  
+}
+.box{
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #1A73E8;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.footer{
+    background-color: #F6F8F9;
+    padding: 80px 0px 130px 0px;
+}
+.footer-bottom{
+    background-color: #F6F8F9;
+    padding: 35px 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.footer h2{
+    margin-bottom: 20px;
+}
+.footer p{
+    font-size: 24px;
+    color: #1A202C;
+}
+.footer p a{
+    font-size: 24px;
+    color: #1A202C;
+}
+
+/*common css*/
+
+.coming-soon{
+    background:none;
+    color: #576574;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+}
+.coming-soon:hover{
+    cursor: default;
+    color: #576574;
+}
+
+.btn{
+    background:none;
+    color: #576574;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+}
+.btn:hover{
+    color: #576574;
+    border-bottom: 2px solid #576574;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+.btn:hover> img {
+    transform: translateX(4px);
+    transition: transform 0.3s ease-out;
+}
+#cursor {
+    position: fixed;
+    top: -5px;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999;
+  }
+  
+  #cursor-border {
+    --size: 50px;
+    position: fixed;
+    top: calc(var(--size) / -2);
+    left: calc(var(--size) / -2);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px black;
+    pointer-events: none;
+    transition: top 0.15s ease-out, left 0.15s ease-out, width 0.15s ease-out,
+      height 0.15s ease-out, background-color 0.15s ease-out;
+    z-index: 999;
+  }
+
+  /* body content */
+  
+#work{
+    scroll-margin-top: 92px;
+}
+#contact{
+    scroll-margin-top: 92px;
+}
